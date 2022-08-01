@@ -1,0 +1,39 @@
+.nav-header{
+    display: flex;
+     
+    width:100%;
+    margin-top: 1rem;
+
+   
+}
+div>li{
+    margin-top:  1rem;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    list-style: none;
+    display: inline;
+    
+}
+
+
+span{
+    margin-top: 1rem;
+    margin-left: 24rem;
+}
+span>li{
+    
+  display: inline-flex;      
+   
+}
+
+.logo{
+    height: 2rem;
+    margin-top:  0.5rem;
+    
+    width: 5%;
+   margin-left: 5rem;
+    border-radius: 2rem;
+    border: 2px solid red;
+
+
+}
