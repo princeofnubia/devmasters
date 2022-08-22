@@ -27,14 +27,21 @@ h2{
    line-height: 0;
    font-family: 'roboto', arial, helvetica, sans-serif;
 }
-.demo-nav p{
+.demo-nav strong{
 margin-left: 2rem;
+
+color: whitesmoke;
+
 }
 h1{
     text-transform:uppercase;
     text-align: center;
-    font-size: 15rem;
+    font-size: 11rem;
     color:white;
+    margin-bottom: 0px;
+    font-family:  optima , sans-serif; ;
+    size: 12px;
+   
 }
 .middle-nav{
     margin-top: 1rem;
@@ -59,12 +66,18 @@ h1{
     background-color: white;
     margin-left: 1rem;
     width: 10rem;
-   
+
     height: 100%;
  
 
   
 }
 p{
+    font-size: 1.5rem;
+      color: whitesmoke;
+     text-align: center;
+    
+     
+
     
 }
