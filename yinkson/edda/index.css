@@ -1,0 +1,83 @@
+body{
+width: auto;
+padding: 1rem 1rem  1rem;
+background-color: #d5c2da;
+}
+.flex-container {
+  
+    display: flex;
+   border-bottom: 2px solid whitesmoke;
+  width: 100%;
+justify-content: space-between;
+height: 3rem;
+
+
+
+}
+.left-nav{
+   
+display: flex;
+line-height: 0;
+
+
+
+}
+h2{
+    font-size: 2rem;
+   line-height: 0;
+   font-family: 'roboto', arial, helvetica, sans-serif;
+}
+.demo-nav p{
+margin-left: 2rem;
+
+color: whitesmoke;
+
+}
+h1{
+    text-transform:uppercase;
+    text-align: center;
+    font-size: 11rem;
+    color:white;
+    margin-bottom: 0px;
+    font-family:  optima , sans-serif; ;
+    size: 12px;
+   
+}
+.middle-nav{
+    margin-top: 1rem;
+    display:flex;
+    width: 50%;
+   
+    justify-content: space-around;
+}
+.right-nav{
+    display: flex;
+    justify-content: space-between;
+   
+   
+}
+.log-in{
+    white-space: nowrap;
+    margin-top: 1rem;
+}
+.demo-nav{
+
+    border-radius: 5px 5px 0px 0px;
+    background-color: white;
+    margin-left: 1rem;
+    width: 10rem;
+
+    height: 100%;
+ 
+
+  
+}
+.text{
+    font-size: 1rem;
+      color: whitesmoke;
+     text-align: center;
+    
+     
+
+    
+}
