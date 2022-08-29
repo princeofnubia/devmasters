@@ -1,0 +1,53 @@
+.container {
+   
+    height: 45rem;
+    width: 100%;
+    display: flex;
+}
+.side-bar{
+   
+    height: 45rem;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(66,153,210)
+    
+  
+}
+
+.middle-nav{
+    border: 1px solid green;
+    height: 45rem;
+    width:50%;
+   
+}
+.right-nav{
+
+ border: 1px solid orange;
+    height: 45rem;
+    width:30%;
+}
+.left-upper-logo{
+   
+    height: 5rem;
+    width: 50%;
+    border-radius:0px 0px 5px 5px  ;
+   align-self: center;
+    background-color: white;
+
+}
+.left{
+    border:1px solid white;
+    height:4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.inside-circle{
+  
+    height: 3rem;
+    width: 3rem;
+    border-radius:50%;
+    background-color: white;
+}
