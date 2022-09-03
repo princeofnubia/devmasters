@@ -1,0 +1,128 @@
+.container {
+   
+    height: 45rem;
+    width: 100%;
+    display: flex;
+}
+.side-bar{
+   
+    height: 45rem;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(66,153,210)
+    
+  
+}
+.left{
+    border-block: 1px solid whitesmoke;
+    height:4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.inside-circle{
+   
+
+    height: 3rem;
+    width: 3rem;
+    border-radius:50%;
+    background-color: white;
+}
+
+
+.middle-nav{
+    border: 1px solid green;
+    height: 45rem;
+    width:50%;
+    background-color: #f3f5f7;
+    display: flex;
+    flex-direction: column;
+  
+   
+}
+
+    
+
+
+.head-middle {
+       
+    height: 5rem;
+    background-color: #fff;
+
+}
+.row{
+    height: 10rem;
+    border-top: 1px solid rgb(35, 28, 28);
+    display: flex;
+    width: 85%;
+    align-self: center;
+    margin-top: 3rem;
+   align-items: center;
+   
+}
+.box{
+
+    height: 8rem;
+    width: 7rem;
+    background-color: white;
+    border: 1px solid white ;
+    margin-left: 3rem;
+    border-radius: 7px;
+   
+}
+
+.right-nav{
+    display: flex;
+    flex-direction: column;
+   
+ border: 1px solid orange;
+    height: 45rem;
+    width:30%;
+}
+.flex{
+    display:flex;
+    height: 5rem;
+  
+    width: 100%;
+}
+.training-admin{
+    width: 70%;
+    height: 5rem;
+    border:1px solid red
+}
+.right-head{
+    width: 30%;
+    height: 5rem;
+    border:1px solid blue;
+  
+}
+.inner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    margin-top: 15rem;
+    align-self: center;
+    height: 10rem;
+    width: 10rem;
+
+   
+}
+.training-center{
+    border: 1px solid;
+    height: 2rem;
+    width:8rem;
+    border-radius: 3rem;
+    align-self: center;
+}
+.left-upper-logo{
+   
+    height: 5rem;
+    width: 50%;
+    border-radius:0px 0px 5px 5px  ;
+   align-self: center;
+    background-color: white;
+
+}
