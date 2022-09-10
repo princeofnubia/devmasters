@@ -1,0 +1,40 @@
+.badge {
+    padding: 0.2rem 0.9rem
+}
+
+.badge-round {
+    border: 1px solid transparent;
+    border-radius: 5rem;
+}
+
+.badge-bg-black {
+    background-color: black;
+}
+
+.badge-tc-black {
+    color: black
+}
+
+.badge-bg-white {
+    background-color: white;
+}
+
+.badge-tc-white {
+    color: white
+}
+
+.badge-bg-yellow {
+    background-color: yellow;
+}
+
+.badge-tc-yellow {
+    color: yellow
+}
+
+.badge-bg-red {
+    background-color: red;
+}
+
+.badge-tc-red {
+    color: red
+}

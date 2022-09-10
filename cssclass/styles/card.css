@@ -1,0 +1,18 @@
+.card {
+    border: 1px solid #eaeaea;
+    display: block;
+}
+
+.card-head {
+    background-color: #333;
+    color: white;
+    padding: 0.02rem;
+}
+
+.card-round {
+    border-radius: 1rem;
+}
+
+.card-body {
+    padding: 1rem;
+}
