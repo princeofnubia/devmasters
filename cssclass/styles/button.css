@@ -1,0 +1,10 @@
+.btn {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: black
+}

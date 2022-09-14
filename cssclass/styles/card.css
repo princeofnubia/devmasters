@@ -5,23 +5,20 @@
     width: 20rem;
     display: flex;
     align-items: center;
-   flex-direction: column;
+    flex-direction: column;
 }
+
 .card-block {
     border: 1px solid black;
     display: block;
-    height: 30rem;
-    width: 20rem;
-  
+
 }
 
 .card-head {
-    height: 12.5rem;
-  
-    color: white;
-    padding: 0.02rem;
+    padding: 0.2rem;
 }
-.card-head-cl{
+
+.card-head-cl {
     background-color: #333;
 
 }
@@ -31,40 +28,45 @@
 }
 
 .card-bottom {
- 
+
     height: 15.5rem;
     padding: 1rem;
 }
-.card-bottom-cl{
+
+.card-bottom-cl {
     background-color: red;
 }
 
 .card-logo {
     display: flex;
     margin-top: 1rem;
-   
+
     border: 1px solid whitesmoke;
     width: 3rem;
     height: 4rem;
     display: flex;
 }
+
 .icon-logo {
- justify-content: center;
- align-items: center;
+    justify-content: center;
+    align-items: center;
 
 }
+
 .card-title {
     text-transform: uppercase;
 
 }
+
 .card-content {
-    overflow-wrap:break-word;
+    overflow-wrap: break-word;
     width: 15rem;
     line-height: 22px;
     height: 10rem;
- 
+
 
 }
+
 .readmore-btn {
     border-radius: 3rem;
     width: 10rem;
@@ -74,6 +76,7 @@
     justify-content: center;
     color: #fff;
 }
+
 .background-btn {
     background-color: black;
 }
