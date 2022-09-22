@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/list.css" />
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-head">
+        <input id="input" />
+        <button id="create-todo">Add</button>
+      </div>
+      <div>
+        <ul id="todo-container" class="list-group"></ul>
+      </div>
+    </div>
+
+    <script>
+      const btn = document.getElementById("create-todo");
+
+      const todoContainer = document.getElementById("todo-container");
+      btn.addEventListener("click", function () {
+        let todoList = document.createElement("li");
+        const input = document.getElementById("input");
+        todoList.className = "list-item";
+        todoList.innerHTML = input.value;
+        todoContainer.append(todoList);
+        input.value = "";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.red-bg {
+    background: red !important;
+    ;
+}
+
+.white-bg {
+    background: white !important;
+}
+
+.red {
+    color: red !important;
+}
+
+.white {
+    color: white !important;
+    ;
+}
+
+.dark {
+    color: black !important;
+}

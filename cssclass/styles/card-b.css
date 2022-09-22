@@ -1,0 +1,27 @@
+.card-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    border: 1px solid #9a9a9a;
+    display: block;
+    border-radius: 0.2rem;
+}
+
+
+.card-head {
+    border-bottom: 1px solid #eaeaea;
+    padding: 0rem 1rem;
+}
+
+.card-img {
+    background-attachment: fixed;
+}
+
+.card-body {
+    width: 90%;
+    margin: auto;
+}
+
+.card-footer {}

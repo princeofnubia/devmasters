@@ -1,0 +1,17 @@
+.list-group {
+    border: 1px solid #9a9a9a;
+    display: block;
+    list-style-type: none;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+.list-item {
+    border-bottom: 1px solid #9a9a9a;
+    padding: 0.5rem;
+}
+
+.list-item:last-child {
+    border-bottom: none;
+}
