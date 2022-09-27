@@ -1,0 +1,66 @@
+.one-spin{
+    border: 13px solid white;
+    outline: auto whitesmoke;
+    border-bottom: 12px solid blue;
+    width: 5%;
+    height:5rem;
+    border-radius: 5rem ;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: whitesmoke;
+    animation: circle 1s linear infinite ;
+
+
+}
+.spin-reverse{
+    border: 13px solid white;
+    outline: auto whitesmoke;
+    border-bottom: 12px solid blue;
+    width: 5%;
+    height:5rem;
+    border-radius: 5rem ;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: whitesmoke;
+    animation: circle 1s ease infinite ;
+    animation-direction: reverse;
+}
+.two-spin {
+    border: 13px solid white;
+    outline: auto whitesmoke;
+    width: 5%;
+    height:5rem;
+    border-radius: 5rem ;
+    background-color: whitesmoke;
+    animation: circle 1s linear infinite ;
+    border-top: 16px solid red;
+    border-bottom: 16px solid blue;
+  }
+  .three-spin {
+    border: 13px solid white;
+    outline: auto whitesmoke;
+    width: 5%;
+    height:5rem;
+    border-radius: 5rem ;
+    background-color: whitesmoke;
+    animation: circle 1s ease infinite ;
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+ 
+  }
+  .four-spin{
+    border: 13px solid white;
+    outline: auto whitesmoke;
+    width: 5%;
+    height:5rem;
+    border-radius: 5rem ;
+    background-color: whitesmoke;
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+    border-left: 16px solid pink;
+}
+@keyframes circle {
+   from { transform: rotate(0deg); }
+   to { transform: rotate(360deg); }
+    
+}
