@@ -193,7 +193,10 @@ body{
 }
 
 @keyframes c-wave{ 0% {
-    transform:  translate(200px)
+    transform:  translate(200px);
   }
- 
-  }
+  10%{transform:rotate(90deg);}
+  
+  50% {transform:rotate(100deg);}
+  100% {transform:rotate(360deg);}
+}
