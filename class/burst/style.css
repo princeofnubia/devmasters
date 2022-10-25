@@ -1,0 +1,50 @@
+button {
+    background-color: red;
+    border: none;
+    padding: 0.5rem 4rem;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2rem;
+}
+
+.burst {
+    box-sizing: border-box;
+    padding: 0.1rem;
+    height: 0.2rem;
+    width: 0.2rem;
+    margin: 0.5rem;
+    animation: bu 1s ease-in;
+    transform: scale(1);
+}
+
+#me {
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid;
+    border-radius: 50rem;
+    margin-top: 15rem;
+    padding: 2rem;
+}
+
+@keyframes bu {
+
+    100% {
+        transform: skew(45deg, 30deg) rotateX(45deg) rotateZ(45deg) rotateZ(180deg);
+    }
+
+    75% {
+        transform: rotateX(45deg) rotateZ(45deg) rotateY(45deg) scale(1);
+    }
+
+    25% {
+        transform: rotateX(30deg) rotateZ(30deg) rotateY(30deg) scale(1);
+    }
+
+    0% {
+        transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) scale(2);
+    }
+}
