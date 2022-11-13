@@ -1,0 +1,15 @@
+.table-bg-red{
+background-color:red;
+}
+.table-border{
+    border: 1px solid;
+}
+.td-border{
+    border: 1px solid ;
+}
+.tr-bg-red{
+    background-color: red;
+}
+.tr-nth-child:nth-child(){
+ background-color: blue;
+}
