@@ -1,4 +1,4 @@
-//<h1>there was once a (adjective) programmer who wanted to use a javascript to [verb] the [noun]</h1>
+<h1>there was once a (adjective) programmer who wanted to use a javascript to [verb] the [noun]</h1>
 var num=3;
 var numLeft=num-1;  
 var adjectives =prompt('please enter any adjectives'+'['+numLeft+' questions left]out of '+num+'');
