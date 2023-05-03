@@ -3,14 +3,16 @@ body{
     width: auto;
 }
 .box{
-    display: flex;
     width: auto;
+   
    
  
 }
 .bgyellow{
+    
+    display: flex;
     background-color: #ffd741;
-    height: 25em;
+    height: 20em;
     border: none;
     padding: 1em;
     padding-bottom:10em;
@@ -39,34 +41,75 @@ body{
 }
 .home{
     display: flex;
-    width: 45em;
+    width: 40em;
     height: fit-content;
-    margin-left: 10em;
+    margin-left: 5em;
     justify-content: space-between;
     align-items: center;
 }
 .img{
-    border: 1px solid blue;
+    border: 1px solid whitesmoke;
     margin-top: 5em;
-    width: 20em;
-    height: ;
+    width: 15em;
+    height: 15em;
+ 
 }
 img{
-    width: 20em;
-    height: auto;
-    mix-blend-mode:normal;
+    width: 15em;
+    object-fit:fill;
+    mix-blend-mode:screen;
+ 
+
 }
 .bgwhite{
+    
     background-color: #ffff;
     height: 30em;
     border: none;
 
 }
+#heading{
+    display: flex;
+justify-content: center;
+
+}
+#flexbox{
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+   
+    height: 75%;
+  
+}
+#flexrow{
+    justify-content: space-evenly;
+   
+    display: flex;
+  
+    height: 10em;
+    width: 100%;
+}
+#flexrow>div{
+    align-content: center;
+    height: 10em;
+    width: 10em;
+    border: 1px solid #ccc;
+}
 .bglightgrey{
+    
     background-color: #efefef;
-    height: 18em;
+    height: 30em;
     border: none;
 }
+#container{
+    margin: 7em;
+    border: 1px solid yellow;
+    width: 30em;
+    height: 80%;
+
+}
+#
 .lightblack{
     background-color: #010a1b;
     height: 18em;
