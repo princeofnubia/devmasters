@@ -110,8 +110,17 @@ justify-content: center;
     height: 80%;
 
 }
+#container3{
+
+        position: relative;
+        margin: 5em;
+       
+        width: 30em;
+        height: 40%;
+}
 #container>h1{
     margin: 0px;
+    margin-bottom: 25px;
     color:#ffd741
 }
 #container>p{
@@ -137,6 +146,8 @@ button{
    
     
 }
+
+}
 #image-box{
     margin: 5em;
 
@@ -153,7 +164,7 @@ button{
 }
 .bgwhite1{
     background-color: #ffff;
-    height: 35em;
+    height: 45em;
     border: none
 }
 .bgblack{
