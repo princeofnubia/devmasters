@@ -1,26 +1,175 @@
+
+.textInputWrapper {
+   display: flex;
+    width: 180px;
+    margin: 10px 5px;
+   color: rgb(20, 216, 20);
+  }
+  
+  .textInputWrapper:before {
+    transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+  }
+  
+  .textInputWrapper:before,
+  .textInputWrapper:after {
+    content: "";
+    left: 0;
+    right: 0;
+    position: absolute;
+    pointer-events: none;
+    bottom: -1px;
+    width: 204px;
+  }
+  
+  .textInputWrapper:focus-within:before {
+    border-bottom: 2px solid;
+  }
+  
+  .textInputWrapper:before {
+    transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-bottom: 5px solid whitesmoke;
+  }
+  
+  .textInputWrapper:focus-within:before {
+    border-bottom: 1px solid rgb(20, 216, 20);
+    transform: scaleX(1);
+  }
+  
+  .textInputWrapper:focus-within:after {
+    border-bottom: 2px solid  rgb(20, 216, 20); 
+    transform: scaleX(1);
+  }
+  
+  .textInputWrapper:after {
+    content: "";
+    transform: scaleX(0);
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    will-change: transform;
+    border-bottom: 2px solid;
+    border-bottom-color:  rgb(20, 216, 20): 
+  }
+  
+  .textInput::placeholder {
+    transition: opacity 250ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    opacity: 1;
+    user-select: none;
+    color: rgba(255, 255, 255, 0.45);
+  }
+  
+  .textInputWrapper .textInput {
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0px 2px 5px rgb(35 35 35 / 30%);
+    max-height: 36px;
+    background-color: #252525;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 200ms;
+    transition-property: background-color;
+    color: #e8e8e8;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px;
+    width: 100%;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+  }
+  
+  .textInputWrapper .textInput:focus,
+  .textInputWrapper .textInput:active {
+    outline: none;
+  }
+  
+  .textInputWrapper:focus-within .textInput,
+  .textInputWrapper .textInput:focus,
+  .textInputWrapper .textInput:active {
+    background-color: #353535;
+  }
+  
+  .textInputWrapper:focus-within .textInput::placeholder {
+    opacity: 0;
+  }
+  
+  button {
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #e2dede
+                -6px -6px 12px #e7dbdb;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 9em;
+   }
+#inputbox{
+    display: flex;
+    
+   
+}
+div.textInputWrapper {
+    display: flex;
+    padding: 10px;
+    justify-content:space-evenly;
+    width:100%;
+    border-radius: 15px 0px;
+    background-color: #171717;
+  
+   
+    
+}
+
+.taskList {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
 li{
     list-style-type: none;
 }
-button{
-    border: 1px solid white;
-    border-radius: 2em 0em 2em 0em;;
-    background-color: #ed4d09;
-    color:whitesmoke
 
-}
-button:hover{
-    background-color: rgb(34, 204, 12);
-    color: white;
 
-}
 
 
 li:nth-child(even) {
     background-color:whitesmoke;
-    color:chocolate;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 li:nth-child(odd) {
-    background-color:rgb(50, 78, 41);
-    color:white;
+    background-color:rgb(222, 224, 221);
+    color:rgb(52, 48, 48);
+}
+
+.taskList:hover {
+    background-color: #1717173b;
+}
+
+.dragging {
+    background: #d32121 !important;
+    color: white !important;
+}
+
+.target {
+    border: 3px dashed red !important;
 }
