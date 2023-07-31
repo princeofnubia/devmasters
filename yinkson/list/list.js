@@ -1,92 +1,76 @@
-const inputText = document.getElementById("inputBox");
-const p = document.querySelector("p");
-const addButton = document.getElementById("addButton");
-// const descriptionButton = document.getElementById("descriptionButton");
-const disableButton = document.getElementById("descriptorButton");
-const removeButton = document.getElementById("removeButton");
-const listItem = document.getElementsByTagName("inputBox");
-let ul = document.getElementById("taskList");
-let source;
+window.addEventListener("load", () => {
+  const form = document.querySelector("#tast-list-form");
+  const input = document.querySelector("#form-inputBox");
+  const listItems_el = document.querySelector("#task");
 
 
-let xResize = document.getElementById("resize-r")
-resizing(xResize)
-addButton.addEventListener("click", () => {
-  if (inputText.value === "") {
-    return;
-  }
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-  let li = document.createElement("li");
-  let checkList = document.createElement("input");
-  let span = document.createElement("span");
 
-  checkList.type = "checkbox";
-  checkList.id = "check";
+    const task = input.value;
+   
+    if (!task) {
+      alert("Sorry!your task input is empty.Kindly fill out");
+      return;
+    }
+   
+    const listItems=document.createElement("div");
+    listItems.classList.add("task");
 
-  li.setAttribute("draggable", "true");
-  li.setAttribute("key", ul.children.length);
-  span.innerText = inputText.value;
-  li.classList.add("taskList");
+    const task_content = document.createElement("div");
+     task_content.classList.add("content");
+    //  task_content.innerText= task;
 
-  li.appendChild(span);
-  li.appendChild(checkList);
+     listItems.appendChild(task_content);
 
-  ul.appendChild(li);
-  inputText.value = "";
-});
+// i think the edit is of no Need in a todo list app if YES?COMMENT IT OUT FROM HERE... THEN UNCOMMENT THE ABOVE COMMENT
+     const task_input_el= document.createElement("input");
+     task_input_el.classList.add("text");
+     task_input_el.type="text";
+     task_input_el.value=task;
+     task_input_el.setAttribute("readonly", "true");
+     task_content.appendChild(task_input_el);
+  // END THE COMMENT HERE SIR
+      const taskActions_el = document.createElement("div");
+      taskActions_el.classList.add("actions");
 
-taskList.addEventListener("dblclick", (e) => {
-  e.target.remove("li");
-  const title = document.createElement("title");
-    title.value = "double click to delete";
-});
+      const task_edit_el = document.createElement("button");
+      task_edit_el.classList.add("edit");
+      task_edit_el.innerHTML ="edit";
 
-li.addEventListener("dragstart", (e) => {
-  console.log("I am dragging");
-  source = e;
+      const task_remove_el = document.createElement("button");
+      task_remove_el.classList.add("remove");
+      task_remove_el.innerHTML ="remove";
 
-  e.target.classList.add("source");
-  e.target.classList.remove("target");
-  e.target.classList.add("dragging");
-});
-li.addEventListener("dragend", (e) => {
-  e.target.classList.remove("dragging");
-  e.target.classList.remove("source");
-  console.log("stopped dragging");
-});
-li.addEventListener("dragover", (e) => {
-  e.preventDefault();
-  if (!e.target.classList.contains("source")) {
-    li.classList.add("target");
-  }
-  console.log("He is entering me");
-  e.preventDefault();
-});
+      taskActions_el.appendChild(task_edit_el);
+      taskActions_el.appendChild(task_remove_el);
 
-li.addEventListener("drop", (e) => {
-  e.preventDefault();
-  let src = source;
-  let target = li;
-  let sourceID = source.target.getAttribute("key");
-  let targetID = target.getAttribute("key");
-  // src.target.child Nodes[0].replaceChild(target.childNodes[0])
-});
+      listItems.appendChild(taskActions_el);
 
-li.addEventListener("dragleave", (e) => {
-  console.log("He is going out");
-  e.preventDefault();
-  if (!e.target.classList.contains("source")) {
-    li.classList.remove("target");
-  }
-});
-li.addEventListener("drop", (e) => {
-  console.log("I am dropping");
-  console.log(e);
-});
+     listItems_el.appendChild(listItems);
+  
+   input.value= "";
 
-removeButton.addEventListener("click", () => {
-  let ul = document.getElementsByTagName("ul")[0];
-  let li = document.querySelector("li:last-child");
+   task_edit_el.addEventListener('click', ()=>{
+      if(task_edit_el.innerText.toLowerCase()=="edit"){
+        task_input_el.removeAttribute('readonly');
+        task_input_el.focus();
+        task_edit_el.innerText="Save";}
+        else{
+          task_input_el.setAttribute('readonly',"readonly");
+          task_edit_el.innerText="Edit";
+        }
+   });
 
-  ul.removeChild(li);
+   task_remove_el.addEventListener("click",()=>{
+    listItems_el.removeChild(listItems);
+
+   })
+
+
+
+  });
+
+
 });
