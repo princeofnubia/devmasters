@@ -1,0 +1,323 @@
+body {}
+
+.one-spin {
+    border: 1px solid #f3f3f3;
+    border-bottom: 3px solid #f6df0f;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: circle 500ms linear infinite;
+
+
+
+}
+
+.spin-reverse {
+    border: 1px solid #f3f3f3;
+    border-left: 3px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: circle 500ms linear infinite;
+    border-right: 3px solid rgb(237, 5, 213);
+    animation-direction: reverse;
+}
+
+.two-spin {
+    border: 1px solid #f3f3f3;
+    border-left: 3px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: circle 500ms linear infinite;
+    border-right: 3px solid green;
+
+}
+
+.three-spin {
+    border: 1px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: circle 500ms linear infinite;
+    border-right: 3px solid green;
+    border-bottom: 3px solid rgb(226, 87, 87);
+
+}
+
+.four-spin {
+    border: 1px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: circle 500ms linear infinite;
+    border-right: 3px solid green;
+    border-bottom: 3px solid red;
+    border-left: 3px solid pink;
+}
+
+.wave-container {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+}
+
+.wave {
+    width: 3px;
+    height: 30px;
+    background: linear-gradient(rgb(255, 136, 0), rgb(43, 228, 83));
+    margin: 12px;
+    animation: wave 1s linear infinite;
+}
+
+.wave:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.wave:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.wave:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.wave:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.wave:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.wave:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.wave:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.wave:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.wave:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+.progress-cont {
+    margin-top: 1rem;
+    position: relative;
+    height: 10px;
+    width: 20%;
+    border: 5px solid #f4a261;
+    border-radius: 15px;
+}
+
+.inner-progress {
+    position: absolute;
+    background-color: #ff7828;
+
+    height: 10px;
+    border-radius: 5px;
+    animation: progress 20s infinite linear;
+}
+
+.circle-cont {
+    margin: 1rem;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    position: relative;
+}
+
+.c-wave {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 5rem;
+
+    /* animation: c-wave 1s linear infinite; */
+}
+
+.cl-brown {
+    background-color: brown;
+    animation: c-wave 1s ease-in-out forwards;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+}
+
+.cl-brown-alternate {
+    background-color: brown;
+    animation: c-wave-back 1s ease-in-out reverse;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+}
+
+.cl-blue {
+    background-color: blue;
+    animation: c-wave 1150ms ease-in-out forwards;
+    position: absolute;
+    left: 0;
+}
+
+.cl-blue-alternate {
+    background-color: blue;
+    animation: c-wave-blue-back 1150ms ease-in-out reverse;
+    position: absolute;
+    left: 0;
+}
+
+.cl-yellow {
+    background-color: #f6df0f;
+    animation: c-wave 1250ms ease-in-out forwards;
+    position: absolute;
+    left: 0;
+}
+
+.cl-yellow-alternate {
+    background-color: #f6df0f;
+    animation: c-wave-yellow-back 1250ms ease-in-out reverse;
+    position: absolute;
+    left: 0;
+}
+
+/*
+.cl-orange {
+    background-color: orange;
+    animation: c-wave ease-in-out infinite;
+    animation-duration: 1s;
+    animation-delay: 5000ms;
+    animation-direction: alternate;
+    position: absolute;
+    left: 0;
+}
+
+.cl-aqua {
+    background-color: aqua;
+    animation: c-wave ease-in-out infinite;
+    animation-duration: 1s;
+    animation-delay: 5000ms;
+    animation-direction: alternate;
+    position: absolute;
+    left: 0;
+}
+
+
+.cl-purple {
+    background-color: purple;
+    animation: c-wave ease-in-out infinite;
+    animation-duration: 1s;
+    animation-delay: 5000ms;
+    animation-direction: alternate;
+    position: absolute;
+    left: 0;
+}
+
+
+.cl-white {
+    background-color: #ffff;
+    animation: c-wave ease-in-out infinite;
+    animation-duration: 1s;
+    animation-delay: 5000ms;
+    animation-direction: alternate;
+    position: absolute;
+    left: 0;
+}
+
+.cl-black {
+    background-color: rgb(31, 5, 5);
+    animation: c-wave ease-in-out infinite;
+    animation-duration: 1s;
+    animation-delay: 5000ms;
+    animation-direction: alternate;
+    position: absolute;
+    left: 0;
+} */
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+
+    25% {
+        width: 50%;
+    }
+
+    50% {
+        width: 75%;
+    }
+
+    75% {
+        width: 78%;
+    }
+
+    92% {
+        width: 85%;
+    }
+
+    100% {
+        width: 100%;
+
+    }
+
+    ;
+
+}
+
+@keyframes wave {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes circle {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes c-wave {
+    to {
+        transform: translateX(200px);
+    }
+}
+
+@keyframes c-wave-back {
+    to {
+        transform: translateX(200px);
+    }
+}
+
+@keyframes c-wave-blue-back {
+    to {
+        transform: translateX(200px);
+    }
+}
+
+@keyframes c-wave-yellow-back {
+    to {
+        transform: translateX(200px);
+    }
+}
